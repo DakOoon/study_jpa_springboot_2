@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - JpashopApplicationTests</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>JpashopApplicationTests</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/jpabook.jpashop.html">jpabook.jpashop</a> &gt; JpashopApplicationTests</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.082s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">contextLoads()</td>
+<td class="success">0.082s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>18:25:29.751 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [JpashopApplicationTests]: using SpringBootContextLoader
+18:25:29.755 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [jpabook.jpashop.JpashopApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:25:29.755 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [jpabook.jpashop.JpashopApplicationTests]: JpashopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:25:29.769 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [JpashopApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+18:25:29.809 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/mj/Documents/JPA + SpringBoot 1/jpashop/build/classes/java/main/jpabook/jpashop/JpashopApplication.class]
+18:25:29.810 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration jpabook.jpashop.JpashopApplication for test class jpabook.jpashop.JpashopApplicationTests
+18:25:29.867 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [JpashopApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+18:25:29.868 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [JpashopApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.2)
+
+2023-03-09T18:25:30.019+09:00  INFO 66976 --- [    Test worker] j.jpashop.JpashopApplicationTests        : Starting JpashopApplicationTests using Java 17.0.3 with PID 66976 (started by mj in /Users/mj/Documents/JPA + SpringBoot 1/jpashop)
+2023-03-09T18:25:30.020+09:00  INFO 66976 --- [    Test worker] j.jpashop.JpashopApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-03-09T18:25:30.331+09:00  INFO 66976 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-09T18:25:30.345+09:00  INFO 66976 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-03-09T18:25:30.558+09:00  INFO 66976 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-09T18:25:30.663+09:00  INFO 66976 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:157cd768-2e0f-4cd2-8dd1-6f3068e8ff7c user=SA
+2023-03-09T18:25:30.664+09:00  INFO 66976 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-09T18:25:30.692+09:00  INFO 66976 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-09T18:25:30.723+09:00  INFO 66976 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-09T18:25:30.816+09:00  WARN 66976 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-09T18:25:30.890+09:00  INFO 66976 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-09T18:25:31.359+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists category cascade 
+2023-03-09T18:25:31.359+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists category_item cascade 
+2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists delivery cascade 
+2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists item cascade 
+2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists member cascade 
+2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists order_item cascade 
+2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists orders cascade 
+2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists category_seq
+2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists delivery_seq
+2023-03-09T18:25:31.361+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists item_seq
+2023-03-09T18:25:31.361+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists member_seq
+2023-03-09T18:25:31.361+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists order_item_seq
+2023-03-09T18:25:31.361+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop sequence if exists orders_seq
+2023-03-09T18:25:31.364+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence category_seq start with 1 increment by 50
+2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence delivery_seq start with 1 increment by 50
+2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence item_seq start with 1 increment by 50
+2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence member_seq start with 1 increment by 50
+2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence order_item_seq start with 1 increment by 50
+2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence orders_seq start with 1 increment by 50
+2023-03-09T18:25:31.367+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table category (
+       category_id bigint not null,
+        name varchar(255),
+        parent_id bigint,
+        primary key (category_id)
+    )
+2023-03-09T18:25:31.369+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table category_item (
+       category_id bigint not null,
+        item_id bigint not null
+    )
+2023-03-09T18:25:31.369+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table delivery (
+       delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status varchar(255),
+        primary key (delivery_id)
+    )
+2023-03-09T18:25:31.370+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table item (
+       dtype varchar(31) not null,
+        item_id bigint not null,
+        name varchar(255),
+        price integer not null,
+        stock_quantity integer not null,
+        artist varchar(255),
+        etc varchar(255),
+        author varchar(255),
+        isbn varchar(255),
+        actor varchar(255),
+        director varchar(255),
+        primary key (item_id)
+    )
+2023-03-09T18:25:31.370+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table member (
+       member_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        name varchar(255),
+        primary key (member_id)
+    )
+2023-03-09T18:25:31.371+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table order_item (
+       order_item_id bigint not null,
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        primary key (order_item_id)
+    )
+2023-03-09T18:25:31.372+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table orders (
+       order_id bigint not null,
+        order_date timestamp(6),
+        status varchar(255),
+        delivery_id bigint,
+        member_id bigint,
+        primary key (order_id)
+    )
+2023-03-09T18:25:31.372+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table if exists category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+2023-03-09T18:25:31.377+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table if exists category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+2023-03-09T18:25:31.378+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table if exists category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+2023-03-09T18:25:31.379+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table if exists order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+2023-03-09T18:25:31.379+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table if exists order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+2023-03-09T18:25:31.380+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table if exists orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+2023-03-09T18:25:31.381+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table if exists orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+2023-03-09T18:25:31.383+09:00  INFO 66976 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-09T18:25:31.388+09:00  INFO 66976 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-09T18:25:31.521+09:00  WARN 66976 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-09T18:25:31.716+09:00  INFO 66976 --- [    Test worker] j.jpashop.JpashopApplicationTests        : Started JpashopApplicationTests in 1.821 seconds (process running for 2.38)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 3. 9. 오후 6:25:31</p>
+</div>
+</div>
+</body>
+</html>
