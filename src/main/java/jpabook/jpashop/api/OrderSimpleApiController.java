@@ -41,7 +41,7 @@ public class OrderSimpleApiController {
     }
 
     @GetMapping("api/v2/simple-orders")
-    public Result ordersV2() {
+    public Result<SimpleOrderResponse> ordersV2() {
         List<Order> all = orderRepository.findAllByString(new OrderSearch());
         List<SimpleOrderResponse> collect = all.stream()
                 .map(o -> new SimpleOrderResponse(
@@ -51,7 +51,7 @@ public class OrderSimpleApiController {
                         o.getStatus(),
                         o.getDelivery().getAddress() // LAZY 초기화
                 )).collect(Collectors.toList());
-        return new Result(collect.size(), collect);
+        return new Result<>(collect.size(), collect);
     }
 
     @Data
@@ -72,7 +72,7 @@ public class OrderSimpleApiController {
     }
 
     @GetMapping("api/v3/simple-orders")
-    public Result ordersV3() {
+    public Result<SimpleOrderResponse> ordersV3() {
         List<Order> all = orderRepository.findAllWithMemberDelivery();
         List<SimpleOrderResponse> collect = all.stream()
                 .map(o -> new SimpleOrderResponse(
@@ -82,12 +82,12 @@ public class OrderSimpleApiController {
                         o.getStatus(),
                         o.getDelivery().getAddress()
                 )).collect(Collectors.toList());
-        return new Result(collect.size(), collect);
+        return new Result<>(collect.size(), collect);
     }
 
     @GetMapping("api/v4/simple-orders")
-    public Result ordersV4() {
+    public Result<OrderSimpleQueryDto> ordersV4() {
         List<OrderSimpleQueryDto> all = orderSimpleQueryRepository.findOrderDtos();
-        return new Result(all.size(), all);
+        return new Result<>(all.size(), all);
     }
 }

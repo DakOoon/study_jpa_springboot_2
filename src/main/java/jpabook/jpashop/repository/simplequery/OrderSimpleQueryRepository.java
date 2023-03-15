@@ -15,10 +15,10 @@ public class OrderSimpleQueryRepository {
     public List<OrderSimpleQueryDto> findOrderDtos() {
         return em.createQuery(
                 "select new jpabook.jpashop.repository.simplequery.OrderSimpleQueryDto(" +
-                        "o.id, o.member.name, o.orderDate, o.status, o.delivery.address)" +
+                        "o.id, m.name, o.orderDate, o.status, d.address)" +
                         " from Order o" +
                         " join o.member m" +
-                        " join o.delivery d", OrderSimpleQueryDto.class
-        ).getResultList();
+                        " join o.delivery d", OrderSimpleQueryDto.class)
+                .getResultList();
     }
 }
