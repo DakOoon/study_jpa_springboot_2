@@ -1,12 +1,10 @@
 package jpabook.jpashop.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.BatchSize;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -60,10 +58,10 @@ public class Order {
 
     /**
      * 주문 생성
-     * @param member
-     * @param delivery
-     * @param orderItems
-     * @return
+     * @param member 주문자
+     * @param delivery 배송지
+     * @param orderItems 주문상품목록
+     * @return 주문내용
      */
     public static Order createOrder(Member member, Delivery delivery, OrderItem... orderItems) {
         Order order = new Order();
@@ -91,12 +89,11 @@ public class Order {
 
     /**
      * 전체 주문 가격 조회
-     * @return
+     * @return 총 주문 가격
      */
     public int getTotalPrice() {
-        int totalPrice = this.orderItems.stream()
+        return this.orderItems.stream()
                 .mapToInt(OrderItem::getTotalPrice)
                 .sum();
-        return totalPrice;
     }
 }

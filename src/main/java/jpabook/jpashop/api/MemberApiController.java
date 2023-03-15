@@ -20,12 +20,11 @@ public class MemberApiController {
 
     @GetMapping("/api/v1/members")
     public List<Member> readMemberV1() {
-        List<Member> members = memberService.findMembers();
-        return members;
+        return memberService.findMembers();
     }
 
     @GetMapping("/api/v2/members")
-    public Result readMemberV2() {
+    public Result<ReadMemberResponse> readMemberV2() {
         List<Member> findMembers = memberService.findMembers();
         List<ReadMemberResponse> collect = findMembers.stream()
                 .map(m -> {
@@ -45,7 +44,7 @@ public class MemberApiController {
                                 m.getAddress().getZipcode());
                     }
                 }).collect(Collectors.toList());
-        return new Result(collect.size(), collect);
+        return new Result<>(collect.size(), collect);
     }
 
     @Data
@@ -57,7 +56,7 @@ public class MemberApiController {
 
     @Data
     @AllArgsConstructor
-    private class ReadMemberResponse {
+    private static class ReadMemberResponse {
         private Long id;
         private String name;
         private String city;

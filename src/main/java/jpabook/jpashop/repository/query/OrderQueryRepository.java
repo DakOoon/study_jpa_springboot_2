@@ -40,15 +40,14 @@ public class OrderQueryRepository {
                 .setParameter("orderIds", orderIds)
                 .getResultList();
         Map<Long, List<OrderItemQueryDto>> orderItemMap = orderItems.stream()
-                .collect(Collectors.groupingBy(oi -> oi.getOrderId()));
+                .collect(Collectors.groupingBy(OrderItemQueryDto::getOrderId));
         return orderItemMap;
     }
 
     private static List<Long> toOrderIds(List<OrderQueryDto> orders) {
-        List<Long> orderIds = orders.stream()
-                .map(o -> o.getOrderId())
+        return orders.stream()
+                .map(OrderQueryDto::getOrderId)
                 .collect(Collectors.toList());
-        return orderIds;
     }
 
     private List<OrderItemQueryDto> findOrderItems(Long orderId) {

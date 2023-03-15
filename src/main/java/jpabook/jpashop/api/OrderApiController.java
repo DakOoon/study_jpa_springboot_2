@@ -142,20 +142,16 @@ public class OrderApiController {
     public Result<OrderQueryDto> ordersV6() {
         List<OrderFlatDto> all = orderQueryRepository.findAllByDto_flat();
         List<OrderQueryDto> transform = all.stream()
-                .collect(Collectors.groupingBy(dto -> {
-                    return new OrderQueryDto(
-                            dto.getOrderId(),
-                            dto.getName(),
-                            dto.getOrderDate(),
-                            dto.getOrderStatus(),
-                            dto.getAddress());
-                    }, Collectors.mapping(dto -> {
-                        return new OrderItemQueryDto(
+                .collect(Collectors.groupingBy(dto -> new OrderQueryDto(
+                        dto.getOrderId(),
+                        dto.getName(),
+                        dto.getOrderDate(),
+                        dto.getOrderStatus(),
+                        dto.getAddress()), Collectors.mapping(dto -> new OrderItemQueryDto(
                                     dto.getOrderId(),
                                     dto.getItemName(),
                                     dto.getOrderPrice(),
-                                    dto.getCount());
-                        }, Collectors.toList())))
+                                    dto.getCount()), Collectors.toList())))
                 .entrySet()
                 .stream()
                 .map(e -> new OrderQueryDto(
