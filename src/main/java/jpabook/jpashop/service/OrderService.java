@@ -23,15 +23,16 @@ public class OrderService {
 
     /**
      * 주문
-     * @param memberId
-     * @param itemId
-     * @param count
-     * @return
+     * @param memberId 주문자
+     * @param itemId 주문상품
+     * @param count 주문수량
+     * @return 생성한 주문 아이디
      */
     @Transactional
     public Long order(Long memberId, Long itemId, int count) {
         // 엔티티 조회
-        Member member = memberRepository.findOne(memberId);
+//        Member member = memberRepository.findOne(memberId);
+        Member member = memberRepository.findById(memberId).get();
         Item item = itemRepository.findOne(itemId);
 
         // 배송정보 설정
@@ -53,7 +54,7 @@ public class OrderService {
 
     /**
      * 주문 취소
-     * @param orderId
+     * @param orderId 취소 대상 주문아이디
      */
     @Transactional
     public void cancelOrder(Long orderId) {
@@ -66,10 +67,10 @@ public class OrderService {
 
     /**
      * 주문 검색
-     * @param orderSearch
-     * @return
+     * @param orderSearch 조회조건
+     * @return 검색결과
      */
     public List<Order> findOrders(OrderSearch orderSearch) {
-        return orderRepository.findAllByString(orderSearch);
+        return orderRepository.findAll(orderSearch);
     }
 }

@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.082s</div>
+<div class="counter">0.079s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,7 +79,7 @@
 </thead>
 <tr>
 <td class="success">contextLoads()</td>
-<td class="success">0.082s</td>
+<td class="success">0.079s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,14 +87,14 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>18:25:29.751 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [JpashopApplicationTests]: using SpringBootContextLoader
-18:25:29.755 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [jpabook.jpashop.JpashopApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-18:25:29.755 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [jpabook.jpashop.JpashopApplicationTests]: JpashopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-18:25:29.769 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [JpashopApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
-18:25:29.809 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/mj/Documents/JPA + SpringBoot 1/jpashop/build/classes/java/main/jpabook/jpashop/JpashopApplication.class]
-18:25:29.810 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration jpabook.jpashop.JpashopApplication for test class jpabook.jpashop.JpashopApplicationTests
-18:25:29.867 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [JpashopApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
-18:25:29.868 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [JpashopApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
+<pre>15:42:54.568 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [JpashopApplicationTests]: using SpringBootContextLoader
+15:42:54.572 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [jpabook.jpashop.JpashopApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:42:54.572 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [jpabook.jpashop.JpashopApplicationTests]: JpashopApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:42:54.583 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [JpashopApplicationTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+15:42:54.623 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/mj/Documents/JPA + SpringBoot 2/jpashop/build/classes/java/main/jpabook/jpashop/JpashopApplication.class]
+15:42:54.624 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration jpabook.jpashop.JpashopApplication for test class jpabook.jpashop.JpashopApplicationTests
+15:42:54.672 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [JpashopApplicationTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+15:42:54.673 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [JpashopApplicationTests], class annotated with @DirtiesContext [false] with mode [null]
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -104,63 +104,63 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.0.2)
 
-2023-03-09T18:25:30.019+09:00  INFO 66976 --- [    Test worker] j.jpashop.JpashopApplicationTests        : Starting JpashopApplicationTests using Java 17.0.3 with PID 66976 (started by mj in /Users/mj/Documents/JPA + SpringBoot 1/jpashop)
-2023-03-09T18:25:30.020+09:00  INFO 66976 --- [    Test worker] j.jpashop.JpashopApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-03-09T18:25:30.331+09:00  INFO 66976 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-03-09T18:25:30.345+09:00  INFO 66976 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
-2023-03-09T18:25:30.558+09:00  INFO 66976 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-03-09T18:25:30.663+09:00  INFO 66976 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:157cd768-2e0f-4cd2-8dd1-6f3068e8ff7c user=SA
-2023-03-09T18:25:30.664+09:00  INFO 66976 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-03-09T18:25:30.692+09:00  INFO 66976 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-03-09T18:25:30.723+09:00  INFO 66976 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-03-09T18:25:30.816+09:00  WARN 66976 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-03-09T18:25:30.890+09:00  INFO 66976 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
-2023-03-09T18:25:31.359+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:54.817+09:00  INFO 62634 --- [    Test worker] j.jpashop.JpashopApplicationTests        : Starting JpashopApplicationTests using Java 17.0.3 with PID 62634 (started by mj in /Users/mj/Documents/JPA + SpringBoot 2/jpashop)
+2023-03-16T15:42:54.818+09:00  INFO 62634 --- [    Test worker] j.jpashop.JpashopApplicationTests        : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-03-16T15:42:55.130+09:00  INFO 62634 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-16T15:42:55.162+09:00  INFO 62634 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 1 JPA repository interfaces.
+2023-03-16T15:42:55.351+09:00  INFO 62634 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-03-16T15:42:55.452+09:00  INFO 62634 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:f956b3fd-d564-4d54-99ab-9794b7b8da3a user=SA
+2023-03-16T15:42:55.453+09:00  INFO 62634 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-03-16T15:42:55.477+09:00  INFO 62634 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-16T15:42:55.502+09:00  INFO 62634 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-03-16T15:42:55.588+09:00  WARN 62634 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-03-16T15:42:55.648+09:00  INFO 62634 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-03-16T15:42:56.088+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists category cascade 
-2023-03-09T18:25:31.359+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.089+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists category_item cascade 
-2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.089+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists delivery cascade 
-2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.089+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists item cascade 
-2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.089+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists member cascade 
-2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.090+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists order_item cascade 
-2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.090+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop table if exists orders cascade 
-2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.090+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop sequence if exists category_seq
-2023-03-09T18:25:31.360+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.090+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop sequence if exists delivery_seq
-2023-03-09T18:25:31.361+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.090+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop sequence if exists item_seq
-2023-03-09T18:25:31.361+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.090+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop sequence if exists member_seq
-2023-03-09T18:25:31.361+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.091+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop sequence if exists order_item_seq
-2023-03-09T18:25:31.361+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.091+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     drop sequence if exists orders_seq
-2023-03-09T18:25:31.364+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence category_seq start with 1 increment by 50
-2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence delivery_seq start with 1 increment by 50
-2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence item_seq start with 1 increment by 50
-2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence member_seq start with 1 increment by 50
-2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence order_item_seq start with 1 increment by 50
-2023-03-09T18:25:31.366+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : create sequence orders_seq start with 1 increment by 50
-2023-03-09T18:25:31.367+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.094+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : create sequence category_seq start with 1 increment by 50
+2023-03-16T15:42:56.095+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : create sequence delivery_seq start with 1 increment by 50
+2023-03-16T15:42:56.095+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : create sequence item_seq start with 1 increment by 50
+2023-03-16T15:42:56.096+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : create sequence member_seq start with 1 increment by 50
+2023-03-16T15:42:56.096+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : create sequence order_item_seq start with 1 increment by 50
+2023-03-16T15:42:56.096+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : create sequence orders_seq start with 1 increment by 50
+2023-03-16T15:42:56.096+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table category (
        category_id bigint not null,
@@ -168,13 +168,13 @@
         parent_id bigint,
         primary key (category_id)
     )
-2023-03-09T18:25:31.369+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.098+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table category_item (
        category_id bigint not null,
         item_id bigint not null
     )
-2023-03-09T18:25:31.369+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.099+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table delivery (
        delivery_id bigint not null,
@@ -184,7 +184,7 @@
         status varchar(255),
         primary key (delivery_id)
     )
-2023-03-09T18:25:31.370+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.099+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table item (
        dtype varchar(31) not null,
@@ -200,7 +200,7 @@
         director varchar(255),
         primary key (item_id)
     )
-2023-03-09T18:25:31.370+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.100+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table member (
        member_id bigint not null,
@@ -210,7 +210,7 @@
         name varchar(255),
         primary key (member_id)
     )
-2023-03-09T18:25:31.371+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.100+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table order_item (
        order_item_id bigint not null,
@@ -220,7 +220,7 @@
         order_id bigint,
         primary key (order_item_id)
     )
-2023-03-09T18:25:31.372+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.101+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     create table orders (
        order_id bigint not null,
@@ -230,52 +230,322 @@
         member_id bigint,
         primary key (order_id)
     )
-2023-03-09T18:25:31.372+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.101+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     alter table if exists category 
        add constraint FK2y94svpmqttx80mshyny85wqr 
        foreign key (parent_id) 
        references category
-2023-03-09T18:25:31.377+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.104+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     alter table if exists category_item 
        add constraint FKu8b4lwqutcdq3363gf6mlujq 
        foreign key (item_id) 
        references item
-2023-03-09T18:25:31.378+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.105+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     alter table if exists category_item 
        add constraint FKcq2n0opf5shyh84ex1fhukcbh 
        foreign key (category_id) 
        references category
-2023-03-09T18:25:31.379+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.106+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     alter table if exists order_item 
        add constraint FKija6hjjiit8dprnmvtvgdp6ru 
        foreign key (item_id) 
        references item
-2023-03-09T18:25:31.379+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.106+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     alter table if exists order_item 
        add constraint FKt4dc2r9nbvbujrljv3e23iibt 
        foreign key (order_id) 
        references orders
-2023-03-09T18:25:31.380+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.107+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     alter table if exists orders 
        add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
        foreign key (delivery_id) 
        references delivery
-2023-03-09T18:25:31.381+09:00 DEBUG 66976 --- [    Test worker] org.hibernate.SQL                        : 
+2023-03-16T15:42:56.108+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
     
     alter table if exists orders 
        add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
        foreign key (member_id) 
        references member
-2023-03-09T18:25:31.383+09:00  INFO 66976 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-03-09T18:25:31.388+09:00  INFO 66976 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-03-09T18:25:31.521+09:00  WARN 66976 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-03-09T18:25:31.716+09:00  INFO 66976 --- [    Test worker] j.jpashop.JpashopApplicationTests        : Started JpashopApplicationTests in 1.821 seconds (process running for 2.38)
+2023-03-16T15:42:56.110+09:00  INFO 62634 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-16T15:42:56.116+09:00  INFO 62634 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-16T15:42:56.184+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for member_seq
+2023-03-16T15:42:56.196+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for item_seq
+2023-03-16T15:42:56.197+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for item_seq
+2023-03-16T15:42:56.198+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for orders_seq
+2023-03-16T15:42:56.199+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for delivery_seq
+2023-03-16T15:42:56.200+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for order_item_seq
+2023-03-16T15:42:56.200+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for order_item_seq
+2023-03-16T15:42:56.205+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.206+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [서울]
+2023-03-16T15:42:56.206+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [1]
+2023-03-16T15:42:56.207+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [11]
+2023-03-16T15:42:56.207+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [userA]
+2023-03-16T15:42:56.207+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [1]
+2023-03-16T15:42:56.208+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2023-03-16T15:42:56.208+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [book11]
+2023-03-16T15:42:56.208+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [INTEGER] - [10000]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [INTEGER] - [100]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [null]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [BIGINT] - [1]
+2023-03-16T15:42:56.209+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [book12]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [INTEGER] - [20000]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [INTEGER] - [100]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [null]
+2023-03-16T15:42:56.209+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [BIGINT] - [2]
+2023-03-16T15:42:56.209+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        delivery
+        (city, street, zipcode, status, delivery_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.210+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [서울]
+2023-03-16T15:42:56.210+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [1]
+2023-03-16T15:42:56.210+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [11]
+2023-03-16T15:42:56.210+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.210+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [1]
+2023-03-16T15:42:56.210+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        orders
+        (delivery_id, member_id, order_date, status, order_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.210+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [1]
+2023-03-16T15:42:56.210+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [1]
+2023-03-16T15:42:56.210+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [2023-03-16T15:42:56.198049]
+2023-03-16T15:42:56.211+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [ORDER]
+2023-03-16T15:42:56.211+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [1]
+2023-03-16T15:42:56.211+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [1]
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [1]
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [BIGINT] - [1]
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [INTEGER] - [10000]
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [1]
+2023-03-16T15:42:56.212+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [2]
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [2]
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [BIGINT] - [1]
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [INTEGER] - [20000]
+2023-03-16T15:42:56.212+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [2]
+2023-03-16T15:42:56.213+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2023-03-16T15:42:56.214+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [book11]
+2023-03-16T15:42:56.214+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [INTEGER] - [10000]
+2023-03-16T15:42:56.214+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [INTEGER] - [99]
+2023-03-16T15:42:56.214+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.214+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [null]
+2023-03-16T15:42:56.214+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [BIGINT] - [1]
+2023-03-16T15:42:56.215+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2023-03-16T15:42:56.215+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [book12]
+2023-03-16T15:42:56.215+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [INTEGER] - [20000]
+2023-03-16T15:42:56.215+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [INTEGER] - [98]
+2023-03-16T15:42:56.215+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.215+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [null]
+2023-03-16T15:42:56.215+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [BIGINT] - [2]
+2023-03-16T15:42:56.218+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for member_seq
+2023-03-16T15:42:56.218+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for orders_seq
+2023-03-16T15:42:56.219+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    select
+        next value for delivery_seq
+2023-03-16T15:42:56.220+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.220+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [부산]
+2023-03-16T15:42:56.220+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [2]
+2023-03-16T15:42:56.220+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [22]
+2023-03-16T15:42:56.220+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [userB]
+2023-03-16T15:42:56.220+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [2]
+2023-03-16T15:42:56.220+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [book21]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [INTEGER] - [20000]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [INTEGER] - [200]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [null]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [BIGINT] - [3]
+2023-03-16T15:42:56.221+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        item
+        (name, price, stock_quantity, author, isbn, dtype, item_id) 
+    values
+        (?, ?, ?, ?, ?, 'B', ?)
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [book22]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [INTEGER] - [40000]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [INTEGER] - [300]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [null]
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [BIGINT] - [4]
+2023-03-16T15:42:56.221+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        delivery
+        (city, street, zipcode, status, delivery_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.221+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [부산]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [VARCHAR] - [2]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [VARCHAR] - [22]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [2]
+2023-03-16T15:42:56.222+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        orders
+        (delivery_id, member_id, order_date, status, order_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [BIGINT] - [2]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [2]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [TIMESTAMP] - [2023-03-16T15:42:56.218870]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [ORDER]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [2]
+2023-03-16T15:42:56.222+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [3]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [3]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [BIGINT] - [2]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [INTEGER] - [20000]
+2023-03-16T15:42:56.222+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [3]
+2023-03-16T15:42:56.223+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    insert 
+    into
+        order_item
+        (count, item_id, order_id, order_price, order_item_id) 
+    values
+        (?, ?, ?, ?, ?)
+2023-03-16T15:42:56.223+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [INTEGER] - [4]
+2023-03-16T15:42:56.223+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [BIGINT] - [4]
+2023-03-16T15:42:56.223+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [BIGINT] - [2]
+2023-03-16T15:42:56.223+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [INTEGER] - [40000]
+2023-03-16T15:42:56.223+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [BIGINT] - [4]
+2023-03-16T15:42:56.223+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [book21]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [INTEGER] - [20000]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [INTEGER] - [197]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [null]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [BIGINT] - [3]
+2023-03-16T15:42:56.224+09:00 DEBUG 62634 --- [    Test worker] org.hibernate.SQL                        : 
+    update
+        item 
+    set
+        name=?,
+        price=?,
+        stock_quantity=?,
+        author=?,
+        isbn=? 
+    where
+        item_id=?
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [1] as [VARCHAR] - [book22]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [2] as [INTEGER] - [40000]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [3] as [INTEGER] - [296]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [4] as [VARCHAR] - [null]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [5] as [VARCHAR] - [null]
+2023-03-16T15:42:56.224+09:00 TRACE 62634 --- [    Test worker] org.hibernate.orm.jdbc.bind              : binding parameter [6] as [BIGINT] - [4]
+2023-03-16T15:42:56.454+09:00  WARN 62634 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-16T15:42:56.645+09:00  INFO 62634 --- [    Test worker] j.jpashop.JpashopApplicationTests        : Started JpashopApplicationTests in 1.949 seconds (process running for 2.477)
 </pre>
 </span>
 </div>
@@ -287,7 +557,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 3. 9. 오후 6:25:31</p>
+<a href="http://www.gradle.org">Gradle 7.6</a> at 2023. 3. 16. 오후 3:42:56</p>
 </div>
 </div>
 </body>
